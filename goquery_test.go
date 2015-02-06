@@ -23,8 +23,8 @@ func TestParseHtml(t *testing.T) {
 		t.Errorf("got %v want %v", docHeading, heading)
 	}
 
-	docLead := doc.Find(".heading").Text()
-	lead := "うんこっこ"
+	docLead := doc.Find(".lead").Text()
+	lead := "なんかにおうってばよ"
 
 	if docLead != lead {
 		t.Errorf("got %v want %v", docLead, lead)
